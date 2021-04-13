@@ -4,7 +4,7 @@
   justify-content: center; */
   border-bottom: 2px solid #eeeeee;
   font-weight: 400;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 .Joke-btns {
   display: flex;
@@ -15,7 +15,7 @@
 }
 .Joke-text {
   font-size: 1.15rem;
-  width: 75%;
+  width: 80%;
 }
 .Jokes-votes {
   width: 35px;
@@ -23,7 +23,7 @@
   height: 35px;
   text-align: center;
   border-radius: 50%;
-  border: 3px solid red;
+  border: 4px solid red;
   font-size: 18px;
   font-weight: 500;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
@@ -34,4 +34,42 @@
   font-size: 1.2rem;
   margin: 8px;
   cursor: pointer;
+}
+
+.fa-arrow-up:hover {
+  animation: move-up ease-in 0.7s;
+  color: green;
+}
+.fa-arrow-down:hover {
+  animation: move-down ease-in 0.7s;
+  color: red;
+}
+
+@keyframes move-up {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(-3px);
+  }
+}
+@keyframes move-down {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(-3px);
+  }
+}
+
+.Joke-smiley {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  border-radius: 50%;
 }
